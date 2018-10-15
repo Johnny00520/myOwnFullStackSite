@@ -1,0 +1,32 @@
+{
+  "name": "johnny-resume-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "8.1.1",
+    "npm": "5.0.3"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix johnny-resume-client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix johnny-resume-client && npm run build --prefix johnny-resume-client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "heroku-ssl-redirect": "0.0.4",
+    "joi": "^13.6.0",
+    "node-notifier": "^5.2.1",
+    "nodemailer": "^4.6.7",
+    "nodemon": "^1.18.3"
+  },
+  "devDependencies": {}
+}

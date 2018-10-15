@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+  overflow-x: hidden; }
+  .App .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40px; }
+  .App .App-header .navigationLists {
+    display: block;
+    font: 12px 'opensans-bold', sans-serif;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin: 0 auto;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0; }
+  .App .navbar > .container {
+    transition: top 0.3s; }
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  .navbar > .container {
+    width: auto;
+    display: flex;
+    justify-content: center; } }
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .navbar > .container {
+    width: auto;
+    display: flex;
+    justify-content: center; } }
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar > .container {
+    width: auto;
+    display: flex;
+    justify-content: center; } }
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .navbar > .container {
+    width: auto;
+    display: flex;
+    justify-content: center; } }
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .navbar > .container {
+    width: auto; } }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
